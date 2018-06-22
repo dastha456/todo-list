@@ -5,15 +5,11 @@
 {% block content%}
 <html>
   
-<form action="{%url 'create'%}" method="post">
-  {% csrf_token %}
-
-  {{todo1.as_p}}
-
-
-
-
-  <input type="submit" value="Regester"/>
-</form>
-  </html>
+ <form action="{%url 'create'%}" method="post">
+   {% csrf_token %}
+   {{todo1.as_p}}
+ 
+   <input type="submit" value="Register"/>
+ </form>
+ </html>
 {% endblock %}
