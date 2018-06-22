@@ -17,16 +17,6 @@ class WorktodoForm(forms.ModelForm):
 
 
 
-    '''todo= forms.CharField(widget=forms.TextInput(),required=True,max_length=200)
-    priority=forms.ChoiceField(choices=[('low', 'Low'), ('belowlow', 'Belowlow'), ('normal', 'Normal') ,('abovelow'  ,'Abovelow') ,('high' , 'High')],widget=forms.TextInput(),required=True,)
-    trywork= forms.CharField(widget=forms.TextInput(),required=True,max_length=200)
-    doing=forms.CharField(widget=forms.TextInput(),required=True,max_length=200)
-    done=forms.CharField(widget=forms.TextInput(),required=True,max_length=200)
-    class Meta():
-        model =Worktodo
-        fields=["todo","priority","trywork","doing","done"]'''
-
-
 class TodolistForm(forms.ModelForm):
     class Meta:
         model =Todolist
