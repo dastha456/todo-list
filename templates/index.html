@@ -4,12 +4,16 @@
 
 {% block content%}
 <html>
-  
+  <head>
+  </head>
+  <title>create</title>
+  <body>
  <form action="{%url 'create'%}" method="post">
    {% csrf_token %}
    {{todo1.as_p}}
  
    <input type="submit" value="Register"/>
  </form>
+  </body>
  </html>
 {% endblock %}
