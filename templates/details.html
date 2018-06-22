@@ -1,0 +1,23 @@
+
+{% extends 'base.html'%}
+
+
+
+{% block content%}
+
+
+<h2>taskname:{{todo1.taskname}}</h1>
+  <h2>taskdescription:{{todo1.taskdescription}}</h2><br>
+
+    <h2>task_document:{{todo1.task_document}}</h2><br><br>
+
+      <h2>created_at:{{todo1.created_at}}</h2><br>
+
+        <h2>due_date:{{todo1.due_date}}</h2><br>
+
+      priority  <h2>priority :{{todo2.priority}}<p></h2><br>
+          <h2>trywork :{{todo2.trywork}}</h2><br>
+            <h2>doing :{{todo2.doing}}</h2><br>
+              <h2>done :{{todo2.done}}</h2><br>
+
+{% endblock%}

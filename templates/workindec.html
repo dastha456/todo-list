@@ -1,0 +1,9 @@
+<form action="{%url 'work'%}" method="post">
+  {% csrf_token %}
+
+  {{todo2.as_p}}
+
+
+
+  <input type="submit" value="submit"/>
+</form>

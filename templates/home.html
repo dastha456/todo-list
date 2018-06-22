@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+
+
+{% block content %}
+<html>
+<head>
+ <h1> WELCOME TODO-LIST</h1></head>
+ <body>
+<ul>
+  {%for th in todo1%}
+      {% for th1 in todo2%}
+        <li> <h3> <a href="/todos/details/{{th.id}}"> {{th.taskname}} </a> </h3>  |  {{th1.priority}}<li>
+
+     {%endfor%}
+  {%endfor%}
+
+</ul>
+</body>
+</html>
+{%endblock%}
