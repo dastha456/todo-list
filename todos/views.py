@@ -18,11 +18,8 @@ def todocreate(request):
              form.save()
 
          return redirect('/todos/workcreate/')
-
-
     else:
         allitems=TodolistForm()
-
         return render(request,'index.html', {"todo1":allitems})
 
 def worktodocreate(request):
@@ -35,16 +32,11 @@ def worktodocreate(request):
         allitem =WorktodoForm()
         return render(request,'workindec.html',{"todo2":allitem})
 
-
-
-
 def details(request, id):
-    todos=Todolist.objects.get(id=id)
-    todoss= Worktodo.objects.get(todo =todos)
-
-
+    obj=Todolist.objects.get(id=id)
+    obj1= Worktodo.objects.get(todo =todos)
     context={
-    "todo1":todos,
-    "todo2":todoss,
+    "todo1":obj,
+    "todo2":obj1,
     }
     return render(request,'details.html',context)
